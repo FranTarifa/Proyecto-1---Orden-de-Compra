@@ -42,22 +42,8 @@ public class EjemploOrdenes {
         orden3.addProducto(producto6);
         orden3.addProducto(producto8);
 
-        imprimirOrden(orden1);
-        imprimirOrden(orden2);
-        imprimirOrden(orden3);
-    }
-
-    public static void imprimirOrden(OrdenCompra orden) {
-        System.out.println("===================================");
-        System.out.println("Orden: " + orden.getDescripcion());
-        System.out.println("Fecha: " + orden.getFecha());
-        System.out.println("Cliente: " + orden.getCliente().getNombre() + " " + orden.getCliente().getApellido());
-        System.out.println("Productos:");
-        for (Producto producto : orden.getProductos()) {
-            if (producto != null) {
-                System.out.println("Fabricante: " + producto.getFabricante() + ", Nombre: " + producto.getNombre() + ", Precio: " + producto.getPrecio());
-            }
-        }
-        System.out.println("Gran Total: " + orden.getGranTotal());
+        OrdenCompra.imprimirOrden(orden1);
+        OrdenCompra.imprimirOrden(orden2);
+        OrdenCompra.imprimirOrden(orden3);
     }
 }

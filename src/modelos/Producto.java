@@ -22,4 +22,17 @@ public class Producto {
     public int getPrecio() {
         return precio;
     }
+
+    public void setFabricante(String fabricante) {
+        this.fabricante = fabricante;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
 }
+
